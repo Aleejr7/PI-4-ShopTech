@@ -1,0 +1,125 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Fundo branco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Use min-height em vez de height para o rodapé fixo */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+.back-office {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+/* Estilos para as abas e campo de busca */
+.tabs {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px; /* Espaçamento acima das abas */
+}
+
+.tab-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+    display: inline-block;
+}
+
+.tab-button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para o campo de busca */
+#usuarios .search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adicionei margem inferior para espaçamento entre a busca e a tabela */
+}
+
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+    flex-grow: 1; /* Isso permite que o campo de entrada cresça e preencha o espaço disponível */
+}
+
+#searchButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
+
+
+/* Estilos para a tabela de usuários */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Estilos para a imagem inicial */
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o rodapé fixo */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 5px; /* Diminui a espessura do rodapé */
+    width: 100%;
+    position: fixed; /* Mantém o rodapé fixo */
+    bottom: 0; /* Alinha o rodapé na parte inferior da tela */
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}

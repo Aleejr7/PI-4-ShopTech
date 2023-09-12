@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>ShopTech</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 onclick="goToHome()">ShopTech</h1>
+        </div>
+        <div class="back-office">BackOffice</div>
+    </header>
+
+    <!-- Abas -->
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('produtos')">Produtos</button>
+        <button class="tab-button" onclick="showTab('usuarios')">Usuários</button>
+    </div>
+
+    <!-- Conteúdo da aba Produtos -->
+    <section id="produtos" class="aba">
+        <h2>Gerenciar Produtos</h2>
+        <!-- Conteúdo relacionado a produtos -->
+    </section>
+
+    <!-- Conteúdo da aba Usuários -->
+    <section id="usuarios" class="aba">
+        <h2>Gerenciar Usuários</h2>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Pesquisar por nome">
+            <button id="searchButton" onclick="searchUsers()">Pesquisar</button>
+        </div>
+        <table id="userTable" class="user-table">
+            <!-- Cabeçalho da tabela -->
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Grupo</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas da tabela (usuários) serão adicionadas dinamicamente -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Imagem abaixo das abas -->
+    <div class="image-container">
+        <img src="imagens/Robo.jpg" alt="Imagem da sua loja">
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>@ 2023 ShopTech</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
